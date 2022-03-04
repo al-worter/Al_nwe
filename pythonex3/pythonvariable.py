@@ -121,10 +121,63 @@ print('-------------------------------------------------------------------------
 # 指定宽度
 pi = 3.1415
 print(f'Π的值是：{pi:10}')
-# 指定宽度和zhid小数位数
+# 指定宽度和小数位数
 print(f'Π的值是：{pi:10.2f}')
 # 补零
 print(f'Π的值是：{pi:010.2f}')
 # 左对齐，低位补零
 print(f'Π的值是：{pi:<010.2f}')
 print(f'Π的值是：{pi:<10.2f}')
+#
+print('------------------------------------------------------------------')
+#
+# 变量的赋值
+a = 2
+print(type(a))
+print(id(a))
+print('------------------------------------------------------------')
+po = 3.562
+print(f'房屋的长度是：{po:10}')
+print('-------------------------------------------------------------')
+# 1
+# 2
+# 1.1 基本的数据类型 三种 ： 数值类型 int | 布尔类型 bool | 字符串类型 string
+# 1.1.1 int 是整数值类型
+a = 1
+print(type(a))
+# 1.2 浮点数float 小数点
+b = 2.2
+print(type(b))
+# 1.3 bool 布尔类型 只有True 1 和 False 0
+c = True
+d = False
+print(type(c))
+print(type(d))
+
+# 字符串类型 string  用单引号 ''  | 双引号 ""  | 三引号 ''' '''  ， 括起来的内容就是字符串
+# 三引号括起来的是可以多行或单行； 单引号|双引号 只能括单行
+e = 'i'
+r = '123'
+t = "abc"
+y = '''123
+456
+789
+'''
+print(type(y))
+print(type(e))
+print(type(r))
+print(type(t))
+
+# 转义字符 练习
+# 换行：\n
+# 回车：\r
+# 水平制表符：\t
+# 退格：\b
+print('He said I love you\nbeside she is beatifull  womend')  # 把字符串内容进行换行 \n
+print(" But we need sleep\t 但是我还是睡不着\t 那我需要早点睡觉吗？\b我到底要不要呢？")  # \t 是水平字符，
+print('hello\n haile')  # 是换行
+print("heised\bborder")  # 是退一个格
+print('hello\tworld')
+print('helloo\tworld')
+print('如人生若只初见，\t何事秋风悲画扇。\n等闲变却故人心，\t却道故人心易变。')
+print("他说：\"我今天不想吃饭！我要写代码。\"")
