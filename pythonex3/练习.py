@@ -6,11 +6,20 @@
 # @Software : PyCharm
 
 # 1 # 1.画图说明以下代码的执行的内存指向和b的值是多少，并说明为什么
-a = 10
-b = a
-# a = 100
-print(id(a))
-print(id(b))
+# a = 10
+# b = a
+# a = 1
+# a = 10
+# print(id(a))
+# b = a
+# print(id(b))
+# a = 1
+# print(id(a)
+# a = 10
+# b = a
+# # a = 100
+# print(id(a))
+# print(id(b))
 # print('----------------------------------------------------------')
 # # # 2.将以下数据转换为其它三种类型，并观察结果
 # # # 整数
@@ -47,11 +56,12 @@ print('----------------')
 # # 要求：用几种不同的字符串格式化 方式打印，并且要求对齐  格式化 有 % /
 name = input('请输入您的名字：')
 age = input('您的年龄是：')
-height = input('您的身高是：')
-weight = input('您的体重是：')
-print('其名字是：%s,其年龄是：%s ,其身高是：%s ,其体重是：%s ' % (name, age, height, weight))
+height = float(input('您的身高是：'))
+weight = float(input('您的体重是：'))
+print('其名字是：%5s,其年龄是：%4s ,其身高是：%4.2f米,其体重是：%5.2f公斤 。' % (name, age, height, weight))
 #
-print(f'我名字叫:{name},我的年龄是:{age},我的身高是:{height},我的体重是:{weight}')
+print(f'我名字叫:{name:>5s},我的年龄是:{age:4}岁,我的身高是:{height:4.2f}米,我的体重是:{weight:5.2f}公斤')
+#
 
 # # 5.将4.3 逻辑运算符中的运算表，写成代码，并检查结果是否与表中一致
 a = True
@@ -67,7 +77,7 @@ a = float(input('请输入摄氏温度：'))
 b = float(input('请输入华氏温度：'))
 c = (a * 9 / 5) + 32
 d = (b - 32) * 5 / 9
-print(f'摄氏温度转华氏温度：{c},华氏温度转摄氏温度:{d}')
+print(f'摄氏温度转华氏温度：{c}kjkj华氏温度转摄氏温度:{d}')
 # 方法二 用format
 a = float(input('请输入摄氏温度：'))
 b = float(input('请输入华氏温度：'))
@@ -75,4 +85,3 @@ c = (a * 9 / 5) + 32
 d = (b - 32) * 5 / 9
 print("摄氏温度{}转换为华氏温度为：{}".format(a, c))
 print("华氏温度{}转换为摄氏温度为：{}".format(b, d))
-
