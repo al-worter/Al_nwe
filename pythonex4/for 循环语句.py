@@ -45,13 +45,20 @@
 #     for n in range(6):
 #         print("6",end= " ")
 #     print("")
-# 练习 5
-for m in range(6):
-    for n in range(m + 1):
-        print('*',end = " ")
-    print(" ")
+# 练习 5KL
+# for m in range(6):
+#     for n in range(m + 1):
+#         print('*', end=" ")
+#     print(" ")
 
-# 练习 6
-for m in range(1,10):
-    for n in range(1,m + 1):
-        print(f'')
+# 练习 6 乘法表
+# 方法一：
+# for t in range(1, 10):
+#     for y in range(1, t + 1):
+#         print('{}x{}={}'.format(t, y, t * y), end=' ')
+#     print(" ")
+# 方法儿：
+# for e in range(1,10):
+#     for r in range(1,e+1):
+#         print(f"{e:<2}x{r:<2}={e*r:<2}" , end = ' ')
+#     print()
