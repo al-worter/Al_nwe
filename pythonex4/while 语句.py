@@ -38,4 +38,4 @@
 #     print(ty," 小于9")
 #     ty +=1
 # else:
-#     print(ty,"大于或等于9")
+#  print(ty,"大于或等于9")
