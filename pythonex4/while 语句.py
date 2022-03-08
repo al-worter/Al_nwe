@@ -12,7 +12,7 @@
 #     a +=1
 #     print(sum1)
 
-# while 语句 练习一：
+# while 语句 练习一：s
 # su = 0
 # a =1
 # while a <= 10: #循环条件

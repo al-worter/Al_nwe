@@ -30,7 +30,7 @@
 #     sum =sum * k
 # print(sum)
 
-# 练习 2
+# 练习 2s
 # for i in range(6):
 #     print('*')
 # for l in range(6):
