@@ -61,4 +61,4 @@
 # for e in range(1,10):
 #     for r in range(1,e+1):
 #         print(f"{e:<2}x{r:<2}={e*r:<2}" , end = ' ')
-#   print()
+#  print()
