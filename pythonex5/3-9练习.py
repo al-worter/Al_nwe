@@ -24,7 +24,7 @@ print(sorted(erp))
 i = 0  # 定义 计数变量为b，初始值为1
 for i in range(100, 201):  # 遍历1-100取值，定义为变量 i
     if i % 7 == 0 and i % 8 == 0:
-        print(i,end=' ')
+        print(i, end=' ')
 
 # kkl = (100,200)
 # for r in range(100, 200):
@@ -32,29 +32,55 @@ for i in range(100, 201):  # 遍历1-100取值，定义为变量 i
 
 
 # 3.找出一个列表中，只出现了一次的数字，并且保持原来的次序，例如[1,2,1,3,2,5]结果为[3,5]
+# def 函数名(参数1, 参数2, ……, 参数N):
+# 执行语句
 print('\n----------------------------------------------')
+# lgy = [1, 2, 1, 3, 2, 5]
+# L = [1, 2, 1, 3, 2, 5]
+# for o in lgy:
+#     if o not in L:
+#         L.append(o)
+# print(set(L))
+# lgy = [1, 2, 1, 3, 2, 5]
+# lg = list(set(1))
+#
+# print(lg)
 lgy = [1, 2, 1, 3, 2, 5]
-L = [1, 2, 1, 3, 2, 5]
-for o in lgy:
-    if o not in L:
-        L.append(o)
-print(set(L))
-
-# l=[11,2,3,4,7,6,4,3,54,3,]
-# now_l=[]
-# for i in l:
-#     if i not in now_l:
-# now_l.append(i)
-# print(now_l)
-# 也可以用set直接去重和排序print(set(l)
-
+tmp_1 = [3, 5]
+for i in lgy:
+    count = lgy.count(1)
+    if count >= 2:
+        continue
+    tmp_1.append(1)
+print(tmp_1)
 
 # 提升
 # 4、求 0 -1 + 2 - 3 + 4 - 5 + 6 -7.... + 100
 print('----------------------------------------------')
 
+
+def sum_go(sum_to):
+    sum_all = 0
+    for i in range(1, sum_to + 1):
+        sum_all += i * (-1) ** (1 + i)
+    return sum_all
+
+
+if __name__ == '__main__':
+    result = sum_go(sum_to=100)
+    print(result)
+
 # 5.求100以内的素数：>1整数，只能被1和自己整除
 print('----------------------------------------------')
+i = 2
+while (i < 100):
+    j = 2
+    while (j <= (i / j)):
+        if not (i % j): break
+        j = j + 1
+    if (j > i / j): print(i, "是素数")
+    i = i + 1
+print("GOOD BYE")
 
 # 6. 水仙花数：水仙花数是指一个 n 位数 ( n 大于等于 3 )，它的每个位上的数字的 n 次幂之和等于它本身。
 # # （例如：1的3次方 + 5的三次方 + 3三次方 = 153）。根据这个要求，打印所有三位数的水仙花数。
