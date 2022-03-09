@@ -223,7 +223,7 @@ for o in range(4):
             break  # 提前终止整个循环
         print(f'第{i}次循环break之后')
 
-    # 5.5.2 提前结束本次循环，开始下一次循环。
+    # 5.5.2 提前结束本次循环，开始下一次循环。。
     for i in range(1, 6):
         print(f'第{i}次')
         if i == 3:

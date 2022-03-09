@@ -44,6 +44,6 @@ list6 = [4, 5]
 list7 = list5 + list6
 print(list7)
 
-# 6.4 操作序列的函数
+# 6.4 操作序列的函数。
 str1 = 'abcdef'
 print(list(str1))
