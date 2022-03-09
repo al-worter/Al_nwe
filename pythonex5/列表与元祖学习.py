@@ -85,10 +85,29 @@
 # 元组 不可以增删改 所有的序列下表都是[]
 
 # 元组的遍历查询。
-tuple2 = (22, 44, 55, 6, 77, 2)
-for e in tuple2:
-    print(e)
-for r in range(len(tuple2)):
-    print(tuple2[r])
+# tuple2 = (22, 44, 55, 6, 77, 2)
+# for e in tuple2:
+#     print(e)
+# for r in range(len(tuple2)):
+#     print(tuple2[r])
+#
+#
+# i = 2
+# while (i < 6):
+#     j = 2
+#     while (j <= (i / j)):
+#         if not (i % j): break
+#         j = j + 1
+#     if (j > i / j): print(i, "是素数")
+#     i = i + 1
+# print("GOOD BYE")
 
+#coding=utf-8
+#python - 列表分组技巧
+#请写出一段 Python 代码实现分组一个 list 里面的元素,如 [1,2,3,...100]变成 [[1,2,3],[4,5,6]....]
 
+# a = [x for x in range(1,101)]
+#
+# b = [a[i:i+3] for i in range(0, len(a),3)]
+#
+# print(b)

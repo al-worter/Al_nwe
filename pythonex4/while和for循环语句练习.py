@@ -98,6 +98,7 @@ import random
 #     print("你没有机会了，你输了")
 #     print("这个数字就是————", number)
 
+
 # 4.猜数字游戏，增加游戏次数限制，最多只能猜5次。如果5次都没猜正确，给出提示，游戏结束从
 # num= 2
 # a = 1
@@ -188,44 +189,44 @@ import random
 #     for k in range(5-2*i):
 #         print('*',end = ' ')
 #     print()
-for o in range(4):
-    for p in range(4-o-1):
-        print(" ", end=' ')
-    for k in range(2*o+1):
-        print("*",end=" ")
-    print()
-for o in range(4):
-    for p in range(o+1):
-        print(" ",end=" ")
-    for k in range(5-2*o):
-        print("*", end=' ')
-    print()
+# for o in range(4):
+#     for p in range(4-o-1):
+#         print(" ", end=' ')
+#     for k in range(2*o+1):
+#         print("*",end=" ")
+#     print()
+# for o in range(4):
+#     for p in range(o+1):
+#         print(" ",end=" ")
+#     for k in range(5-2*o):
+#         print("*", end=' ')
+#     print()
 
-    # i = 2
-    # while (i < 6):
-    #     j = 2
-    #     while (j <= (i / j)):
-    #         if not (i % j): break
-    #         j = j + 1
-    #     if (j > i / j): print(i, "是素数")
-    #     i = i + 1
-    # print("GOOD BYE")
+i = 2
+while (i < 6):
+    j = 2
+    while (j <= (i / j)):
+        if not (i % j): break
+        j = j + 1
+    if (j > i / j): print(i, "是素数")
+    i = i + 1
+print("GOOD BYE")
 
-    # print('---------------')
-    # line = 1
-    # for i in range(line //  2+1):
-    #     for j in range(line // 2 +1 - i -1):
+# print('---------------')
+# line = 1
+# for i in range(line //  2+1):
+#     for j in range(line // 2 +1 - i -1):
 
-    # 5.5.1 结束循环语句 break
-    for i in range(1, 6):
-        print(f'第{i}次循环breake之前')
-        if i == 4:
-            break  # 提前终止整个循环
-        print(f'第{i}次循环break之后')
-
-    # 5.5.2 提前结束本次循环，开始下一次循环。。
-    for i in range(1, 6):
-        print(f'第{i}次')
-        if i == 3:
-            continue
-        print(f'第{i}次循环')
+# 5.5.1 结束循环语句 break
+# for i in range(1, 6):
+#     print(f'第{i}次循环breake之前')
+#     if i == 4:
+#         break  # 提前终止整个循环
+#     print(f'第{i}次循环break之后')
+#
+# # 5.5.2 提前结束本次循环，开始下一次循环。。
+for i in range(1, 6):
+    print(f'第{i}次')
+    if i == 3:
+        continue
+    print(f'第{i}次循环')
