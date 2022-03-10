@@ -75,7 +75,7 @@ print(dict1)
 # 删
 dict1.pop('刘翔')
 print(dict1)
-# 查  用遍历查询 即 for
+# 查  用遍历查询 即 for。
 for key in dict1:
     print(key)
 
