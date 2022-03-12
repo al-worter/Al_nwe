@@ -87,4 +87,4 @@ dog3.eat()
 dog3.destroy()
 
 
-if __name__ == "main"
+if __name__ == "__main__":

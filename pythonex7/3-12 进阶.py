@@ -62,10 +62,10 @@ def foo7():
 
 
 if __name__ == "__main__":
-    print(foo1())
-    print(foo2())
-    print(foo3())
-    print(foo4())
-    print(foo5())
-    print(foo6())
-    print(foo7())
+    foo1()
+    foo2()
+    foo3()
+    foo4()
+    foo5()
+    foo6()
+    foo7()
