@@ -10,7 +10,7 @@ def moths():  # 创建函数 不定义函数 形参
     list1 = []  # 把（1，100）de 的数转换成字符串，创建 列表
     for i in range(1, 101):
         i = str(i)  # i 等于 range（）序列中一个元素 即
-        if i.count('6') >= 1:  # 如果i每个元素中含6 的元素count()统计出现次数
+        if i.count('6') >= 1:  # 如果i每个元素中含6 的元素count()统计出现次数  if'6' in i:
             list1.append(i)  # i出现的数，增加到新的 列表 list 中去
     return list1
 
@@ -22,11 +22,13 @@ def moths():  # 创建函数 不定义函数 形参
 def lucky():  # 创建一个函数计算
     money = 100  # 初始值 本金
     year = 0  # 年份
+    list1 = []
     while money >= 0:  # 循环条件
+        list1.append(money)
         money = money * 1.08
         money = money - 10
         year += 1
-
+    print(list1)
     return year
 
 
@@ -43,6 +45,17 @@ def monkey():  # 思路是： 一天吃掉前一天的一半再吃掉一个,到�
     return x
 
 
+# def foo1():
+#     num = 1
+#     list1 = [num]
+#     for i in range(9):
+#         num = (num + 1) * 2
+#         list1.append(num)
+#     list1.reverse()
+#     print(list1)
+#     return num
+
+
 # 4、不使用自带函数，写一个函数，用于返回一个数的绝对值
 def value1():
     a = int(input('输入任意一个数，可知该值的绝对值：'))
@@ -53,19 +66,66 @@ def value1():
 
 
 # 5、写一个函数，用来求三个数的最大值
-def add(a, b, c):
-    # list1 = [a, b, c]
-    return max(a, b, c)
+# def add(a, b, c):
+#     # list1 = [a, b, c]
+#     # return max(a, b, c)
+
+
+def foo5(a, b, c):
+    if a > b:
+        if a >= c:
+            return a
+        else:
+            return c
+    else:
+        if b >= c:
+            return b
+        else:
+            return c
 
 
 # 提升：
 # 6、写一个函数，返回输入整数（大于999小于10000）的每位数的数字之和。
+def fool1(n):
+    a = n // 1000  # 方法一
+    b = (n - a * 1000) // 100
+    c = (n - a * 1000 - b * 100) // 10
+    d = n % 10
+    return a + b + c + d
+
+    # n = str(n)  # 方法二
+    # sum = 0
+    # for i in n:
+    #     sum += int(i)
+    # return sum
+
 
 # 7.递归实现阶乘：
 # n！=nxn-1xn-2x....1
 # 5!=5x4！
+def foo7(n):
+    if n == 1:
+        return 1
+    else:
+        return n * foo7(n - 1)
+
 
 # 8.实现1！+2！+3！+。。。+n！
+def foo8(n):
+    total = 0
+    for i in range(1, n + 1):
+        total = total + foo7(i)
+    return total
+
+
+def foo8_1(n):
+    total = 0
+    for i in range(1, n + 1):
+        fact = 1
+        for j in range(1, i + 1):
+            fact = fact * j
+        total += fact
+    return total
 
 
 print('----------------------------')
@@ -74,4 +134,7 @@ if __name__ == "__main__":
     print(lucky())
     print(monkey())
     print(value1())
-    print(add(2, 3, 4))
+    print(fool1(1343))
+    print(foo7(30))
+    print(foo8(20))
+    print(foo8_1(20))
