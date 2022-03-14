@@ -25,10 +25,10 @@ class women:
 class Dog:
     classname = "犬类"
 
-    def __init__(self, name, color):  # __init__() 意思是构造方法
+    def __init__(self, name, color):  # __init__() 意思是构造方法  形参
         # 该self.name 是对象变量，前面是以self 来修饰，属于对象所有方法
         # name 是局部变量，只在定义的方法中有用
-        self.name = name
+        self.name = name  # 把形参的值 赋值给对象
         self.color = color
 
     # 实例方法
@@ -87,4 +87,3 @@ dog3.eat()
 dog3.destroy()
 
 
-if __name__ == "__main__":
