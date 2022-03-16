@@ -14,7 +14,7 @@
       4.使用连接对象,调用cursor方法创建一个游标对象
       5.使用连接对象,调用execute方法执行sql语句.
       6).查询语句:需要fetchall()  ,fetchone(),fetchmany()去读取所有的内容
-      7)关闭游标对象,关闭连接对象.
+      7)关闭游标对象link.close(),关闭连接对象db.close().
 '''
 # 使用数据库    把def函数去掉后需要取消缩进 内容
 import re
