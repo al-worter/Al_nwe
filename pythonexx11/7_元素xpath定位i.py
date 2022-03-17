@@ -26,9 +26,14 @@ driver.get('https://www.baidu.com/')
 
 # driver.find_element_by_xpath('/htlm/body/div/div/div/div[5]/.....')  #绝对路径的写法
 # driver.find_element_by_xpath('//form[@id="form"]/span/input').send_keys(123)  # 相对路径 通过元素的属性来找子标签
-driver.find_element_by_xpath('//div[@id="s-top-left"]/a').click()  # 相对路径 通过元素的属性来找子标签
+# driver.find_element_by_xpath('//div[@id="s-top-left"]/a').click()  # 相对路径 通过元素的属性来找子标签
 
-driver.find_element_by_xpath('//span[text()="设置"]').click()  # 通过文本来定位,使用text()= "...."
+# driver.find_element_by_xpath('//span[text()="设置"]').click()  # 通过文本来定位,使用text()= "...."
+
+# driver.find_element_by_xpath('//a[contains(@href,"hao123")]').click() # 通过模糊匹配元素的属性href属性,包含hao123
+# driver.find_element_by_xpath('//span[contains(text(),"商务部")]').click() # 通过匹配文本包含"商务部"的方式
+# driver.find_element_by_xpath('//span[starts-with(text(),"茅台")]').click() # 通过匹配开头,文本包含"茅台"
+
 
 sleep(5)
 driver.quit()

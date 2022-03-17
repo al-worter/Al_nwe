@@ -38,20 +38,20 @@ driver.get('https://www.baidu.com/')
 # driver.find_element_by_css_selector('a[href="http://map.baidu.com"] +a').click()  #通过地图找第一个弟弟——贴吧.
 # driver.find_element_by_css_selector('a[href="http://map.baidu.com"] +a +a').click() # 通过地图找第二个弟弟--视频
 #
-# # css模糊匹配
-# #1. 匹配包含 使用 *=
-# driver.find_element_by_css_selector('a[href*="image"]').click() #找一个href包含image的a标签
-#
-# #2. 匹配开头   使用 ^=
-# driver.find_element_by_css_selector('a[href^="https://pan"]').click()   #找一个href是以https: // pan开头的a标签.
-# #3 . 匹配结尾 使用$=
-# driver.find_element_by_css_selector('a[href$="from=baidu-top"]').click()   #找一个href是以from=baidu-top结尾的a标签
+css模糊匹配
+#1. 匹配包含 使用 *=
+driver.find_element_by_css_selector('a[href*="image"]').click() #找一个href包含image的a标签
+
+#2. 匹配开头   使用 ^=
+driver.find_element_by_css_selector('a[href^="https://pan"]').click()   #找一个href是以https: // pan开头的a标签.
+#3 . 匹配结尾 使用$=
+driver.find_element_by_css_selector('a[href$="from=baidu-top"]').click()   #找一个href是以from=baidu-top结尾的a标签
 
 # driver.find_element_by_css_selector('#s-top-left>a:nth-child(4)').click()  # 通过父标签找到第四个a子标签
 driver.find_element_by_css_selector('#s_menus_wrapper>span:nth-child(3)').click()  # 通过父标签找到第四个a子标签
 
-# driver.find_element_by_css_selector('*[href="http://map.baidu.com"]').click()  # *如果出现在=前面.才是包含匹配,如果出现在本来应该写标签名的
-# driver.find_element_by_css_selector('*["class="s-menu-item"]').click()  # *如果出现在=前面.才是包含匹配,如果出现在本来应该写标签名的
+driver.find_element_by_css_selector('*[href="http://map.baidu.com"]').click()  # *如果出现在=前面.才是包含匹配,如果出现在本来应该写标签名的
+driver.find_element_by_css_selector('*["class="s-menu-item"]').click()  # *如果出现在=前面.才是包含匹配,如果出现在本来应该写标签名的
 
 
 sleep(5)
