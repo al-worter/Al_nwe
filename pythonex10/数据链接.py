@@ -12,7 +12,7 @@
       2).导入pymysql  .import pymysql
       3)使用connect方法创建一个连接对象.
       4.使用连接对象,调用cursor方法创建一个游标对象
-      5.使用连接对象,调用execute方法执行sql语句.
+      5.使用连接对象,调用execute()方法执行sql语句.
       6).查询语句:需要fetchall()  ,fetchone(),fetchmany()去读取所有的内容
       7)关闭游标对象link.close(),关闭连接对象db.close().
 '''

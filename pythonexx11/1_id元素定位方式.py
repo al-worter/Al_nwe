@@ -33,15 +33,16 @@ ele.send_keys('python自动化,入门到精通')  # 2 . 对元素进行输入
 print(driver.current_url)  # 获取页面url网页地址
 
 # 对元素进行操作
-# print(ele.size)   # 获取元素的尺度
-# print(ele.get_attribute("class"))  #获取元素其他属性的值,这里获取的是class属性的值
-# print(ele.text) # 获取元素的文本,这个元素没有文本,所以会获取到一个空行.
-# ele.clear() # 意思是把元素里面的内容清空
-# sleep(3)
-# ele.send_keys('超凡蜘蛛侠')
-#
-# driver.find_element_by_id('form').submit() # submit( ) 类似于 回车键的作用 只适用于标签的父标签是form的情况下
+print(ele.size)   # 获取元素的尺度
+print(ele.get_attribute("class"))  #获取元素其他属性的值,这里获取的是class属性的值
+print(ele.text) # 获取元素的文本,这个元素没有文本,所以会获取到一个空行.
+ele.clear() # 意思是把元素里面的内容清空
+sleep(3)
+ele.send_keys('超凡蜘蛛侠')
 
+driver.find_element_by_id('form').submit() # submit( ) 类似于 回车键的作用 只适用于标签的父标签是form的情况下
+
+driver.back()  # 回退页面
 
 # driver.find_element_by_id('su').click()  # 对搜索按钮进行点击
 # # 如果需要验证那么可以让程序暂缓 给跳转进行验证

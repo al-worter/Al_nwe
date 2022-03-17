@@ -38,7 +38,7 @@ driver.get('https://www.baidu.com/')
 # driver.find_element_by_css_selector('a[href="http://map.baidu.com"] +a').click()  #通过地图找第一个弟弟——贴吧.
 # driver.find_element_by_css_selector('a[href="http://map.baidu.com"] +a +a').click() # 通过地图找第二个弟弟--视频
 #
-css模糊匹配
+#css模糊匹配
 #1. 匹配包含 使用 *=
 driver.find_element_by_css_selector('a[href*="image"]').click() #找一个href包含image的a标签
 
@@ -69,7 +69,6 @@ driver.quit()
 #kk>*:nth-child(2)  找一个id=kk的元素下面的第二个子标签,那么找到就是上面的第二个子标签
 
 '''
-
 # driver.find_element_by_css_selector('input[maxilength="255"][name="wd"]').send_keys('好莱坞大片')
 
 
