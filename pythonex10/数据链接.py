@@ -9,7 +9,7 @@
 #     1)：如果是第一次使用，需要下载安装第三方库pymysql
 #       下载方式有两种：1 ,在pychram里面设置-项目-搜索 pymysql 下载，
 #       2.在cmd窗口命令：pip install pymysql下载。
-      2).导入pymysql  .import pymysql
+      2).导入pymysql  .i5mport pymysql
       3)使用connect方法创建一个连接对象.
       4.使用连接对象,调用cursor方法创建一个游标对象
       5.使用连接对象,调用execute()方法执行sql语句.
