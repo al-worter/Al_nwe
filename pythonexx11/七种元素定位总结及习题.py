@@ -10,7 +10,7 @@ from time import sleep
 
 # d第一种元素定位方式 时通过id
 '''
- id方式定位： 1.在元素有id的情况下首先使用id 来进行定位。
+ id方式定位：1.在元素有id的情况下首先使用id 来进行定位。
             2.常用的方法有：
                 1）.send_keys('') 对元素 属性 Input类输入框进行输入.
                 2）.click() 是对该botton进行 点击操作

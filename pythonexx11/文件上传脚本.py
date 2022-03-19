@@ -9,7 +9,7 @@
 ''''''
 '''
 学习目标:
-    文件上传通过定位到上传的按钮,直接把文件的路径传入.
+    文件上传通过定位到上传的按钮,直接把文件的路径传入..
 '''
 from selenium import webdriver
 from time import sleep
