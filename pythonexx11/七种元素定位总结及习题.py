@@ -17,6 +17,9 @@ from time import sleep
                 3） driver.title  是获取该网页的标题
                 4）driver.current_url  获取页面的URL地址 可以通过print打印
                 5）对该位置的元素操作：
+                5) get_attribute()  获取元素的其他属性的值 通过元素调用方法.
+                6) text 获取元素的文本,通过元素调用方法.
+                7) clear() 把元素的内容清空
                     1.print(ele.size)   # 获取元素的尺度
                     print(ele.get_attribute("class"))  #获取元素其他属性的值,这里获取的是class属性的值
                     print(ele.text) # 获取元素的文本,这个元素没有文本,所以会获取到一个空行.
