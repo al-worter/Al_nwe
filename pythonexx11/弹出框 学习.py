@@ -10,7 +10,7 @@
 '''
 学习目标:
     1. alter弹出框,这种弹出框不能通过元素定位的方式操作.
-        使用driver.switch_to.alert切换到弹出框.
+        使用driver.switch_to.alert切换到弹出框
         accept() 点击确认
         dismiss() 点击取消
         send_key() 输入内容.
