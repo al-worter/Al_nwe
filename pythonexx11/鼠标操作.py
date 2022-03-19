@@ -10,7 +10,7 @@ import compileall
 
 '''
 学习目标:
-    1. 鼠标操作需要使用ActionChains类..
+    1. 鼠标操作需要使用ActionChains类...
     from selenium.webdriver.common.action_chains import ActionChains
     步骤: 先实例化一个ActionChains对象,调用下面的方法,再调用perform()执行操作.
     move_to_element()  悬停

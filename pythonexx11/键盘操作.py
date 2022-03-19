@@ -8,7 +8,7 @@
 ''''''
 '''
 学习目标:
-    1. 操作键盘.需要先导入Keys类,并且使用send_keys方法
+    1. 操作键盘.需要先导入Keys类,并且使用send_keys方法.
        from selenium.webdriver.common.keys import Keys
        常用方法:
         send_keys(Keys.BACK_SPACE) 删除键（BackSpace）
