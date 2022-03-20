@@ -49,7 +49,7 @@ driver.find_element_by_css_selector('.fu0 input').send_keys('周姐,这是作业
 
 sleep(2)
 
-# driver.find_element_by_css_selector('input[type="file"]').click()  # 添加附件
+# driver.find_element_by_css_selector('input[type="file"]').click()  # 添加附件。
 # sleep(2)
 
 driver.find_element_by_css_selector('input[type="file"]').send_keys(r'D:\pycharm\zhouwork\clovershrub.png')
