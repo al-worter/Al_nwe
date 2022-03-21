@@ -23,7 +23,7 @@ driver.find_element_by_css_selector('#account-box input').send_keys('liangguiyu0
 driver.find_element_by_name('password').send_keys('LGYlgy123..')  # class_name  与 by_name  的区别是,其 class 后面有属性值的就用
 driver.find_element_by_id('dologin').click()  # 点击登录
 sleep(3)
-result = driver.find_element_by_name('email')
+result = driver.find_elements_by_name('email')
 if "liangguiyu0807" in result:
     print('ok')
 else:
