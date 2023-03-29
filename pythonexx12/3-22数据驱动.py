@@ -18,10 +18,6 @@
                 2).双击打开csv文件,编辑数据,保存-保存的时候提示框选择’是’
                  读取CSV表格用pandas.read_csv()
                  读取xls表格用pandas.read_excel()
-    2.
-    
-    
-    3.
 '''
 '''保存在py文件中的测试数据'''
 # import test_data #import 后面是加python文件名.并且同一目录下的文件可以直接import导入.

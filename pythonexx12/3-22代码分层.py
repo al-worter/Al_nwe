@@ -13,7 +13,7 @@
         2.提高测试用例的可读性,
         3.提高脚本的可维护性
 分层设计后的脚本分为 7 层 :
-    1. common/base : 保存公共方法  .( 比如实例化浏览器)
+    1. common/base : 保存公共方法  .( 比如实例化浏览器)   保存的
     2. page :       业务流程  ()
     3. data :       保存测试数据
     4. case :       使用unittest框架写的用例和断言    一一对应page页面,(用unittest框架写用例和断言.不会有元素定位,只需要调用对应page页面的方法.)   有多少个page 就有多少case
@@ -31,22 +31,102 @@
     2. 一个脚本只验证一个功能点.    
     3. 尽量做功能的正向逻辑验证(如添加加购物车并登录支付)
     4. 脚本之间不要产生太多关联性,每一个脚本尽量互相独立.
-    5. 测试过程中产生的测试数据,测试完成后一定要进行清理.
-    
-            
+    5. 测试过程中产生的测试数据,测试完成后一定要进行清理.  
 '''
 
+# 测试完成后一定要进行清理
+# # class Solution:
+# IP ="114.55.207.244"
+# def addr2dec(addr):
+#     "十进制IP换成十进制整数"
+#     items = [int(x) for x in addr.split(".")]
+#     return sum([items[i] << [24, 16, 8, 0][i] for i in range(4)])
+#
+# def dec2addr(dec):
+#     "十进制整数IP转换成字符串IP地址"
+#     return ".".join([str(dec >> x & 0xff) for x in [24, 16, 8, 0]])
+# # if __name__ == '__main__':
+# do = IPtoNum(IP)
+# print ipto
+# print IPtoNums(ipto)
+
+# IP = "114.55.207.244"
+# def addr2dec(addr):
+#     "十进制IP换成十进制整数"
+#     items = [int(x) for x in addr.split(".")]
+#     return sum([items[i] << [24, 16, 8, 0][i] for i in range(4)])
+# def dec2addr(dec):
+#     "十进制整数IP转换成字符串IP地址"
+#     return ".".join([str(dec >> x & 0xff) for x in [24, 16, 8, 0]])
+#
+# dec = addr2dec(IP)
+# print(dec)
+# print (dec2addr(dec))
+
+# n = int(input())
+# st = input()
+# list = []
+# lists = st.split(" ")
+# for i in range(0,n-1):
+#     # print(list)
+#     for z in range(0,n):
+#         if z == n-1:
+#             print(list[z])
+#         else:
+#             print(list[z],end=' ')
+#     a = list[n-1]
+#     for j in range(n-1,0,-1):
+#         list[j] = list[j-1]
+#     list[0] = a
+# for z in range(0,n):
+#     if z == n-1:
+#         print(list[z])
+#     else:
+#         print(list[z],end=' ')
+
+#矩阵相加，两个3行3列的矩阵，实现其对应位置的数据相加，并返回一个新矩阵
+# X = [[12, 7, 3],
+#      [4, 5, 6],
+#      [7, 8, 9]]
+# Y = [[5, 8, 1],
+#      [6, 7, 3],
+#      [4, 5, 9]]
+# Z = [[0, 0, 0],[0, 0, 0],[0, 0, 0]]
+# for i in range(3):
+#     for j in range(3):
+#         Z[i][j] = X[i][j] + Y[i][j]
+# print(Z)
 
 
-
-
-
-
-
-
-
-
-
-
-
+# class Solution:
+#     def generateMatrix(self , int n):
+#         public int[][] generateMatrix (int n){
+#             int[][] result = new int[n][n];
+#             if(n<1){
+#                 return result;
+#             }
+#             int count=1;
+#             int rowStart = 0 , rowEnd = n-1;
+#             int colStart = 0 , colEnd = n-1;
+#             while(count <= n*n){
+#                 for (int i = colStart;i<colEnd;i++){
+#                     result[rowStart][i] = count++;
+#                 }
+#                 for (int i=rowStart+1;i<=rowEnd;i++){
+#                     result[i][colEnd] = count++;
+#                 }
+#                 for(int i=colEnd-1;i>=colStart;i--){
+#                     result[rowEnd][i] = count++;
+#                 }
+#                 for(int i=rowEnd-1;i>rowStart;i--){
+#                     result[i][colStart] = count++;
+#                 }
+#                 rowStart++;
+#                 rowEnd--;
+#                 colStart++;
+#                 colEnd--;
+#             }
+#             return result
+#         }
+#
 

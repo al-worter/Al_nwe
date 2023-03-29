@@ -24,13 +24,11 @@ class women:
 # 1.2
 class Dog:
     classname = "犬类"
-
     def __init__(self, name, color):  # __init__() 意思是构造方法  形参
         # 该self.name 是对象变量，前面是以self 来修饰，属于对象所有方法
         # name 是局部变量，只在定义的方法中有用
         self.name = name  # 把形参的值 赋值给对象
         self.color = color
-
     # 实例方法
     def eat(self):
         print(f"{self.name}正准备把啃骨头的狗，吃掉它")

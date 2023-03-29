@@ -10,17 +10,12 @@ def foo1():
     # 打开 /创建文件
     # ffl = open(".test1.txt", mode='r',encoding='utf8')
     file1 = open(r"D:\pyworkspace\pythonex\pythonex7\test1.txt", mode='r')  # 绝对路径最好前面加r 禁止转义
-
     # 文件的关闭
     file1.close()
-
-
 # 文件打开 自动关闭 with open()
 def foo2():
     with open(r"D:\pyworkspace\pythonex\pythonex7\test1.txt", mode='r') as file:
         pass
-
-
 # 10.2 文件读取 ： 有三种
 # read()
 # readline() 单行   一次读取一行
@@ -38,7 +33,6 @@ def foo4():
     with open("./test1.txt", mode='r', encoding='utf8') as file:
         list1 = file.readline(4)
         print(list1)
-
 
 def foo5():
     with open("./test1.txt", mode='r', encoding='utf8') as file:

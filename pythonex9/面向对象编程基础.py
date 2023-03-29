@@ -5,7 +5,7 @@
 # @File     : 面向对象编程基础.py
 # @Software : PyCharm
 
-
+''''''
 '''
 面向过程：
         是一种以事件为中心的编程思想，重点关注功能实现步骤，第一步....,第二步.....
@@ -39,36 +39,38 @@
 
 
             对象：从类里面实例化出来的一个具体的对象.
-
-
 '''
-
-
-# 例如：
+'''面向对象三大特性：
+    1) 封装 :  把同一类的属性和方法封装到一个类里面
+    2) 继承 : 子类可以继承父类的属性和方法
+              被继承的类叫父类/基类/超类
+              继承的类叫子类/导出类.
+              继承后子类会拥有多个父类,当多个父类有重复的属性/方法时，以继承的第一个父类为准.
+    3) 多态 :  当子类和父类拥有共同的属性/方法的时候,子类会覆盖父类的属性/方法。  子类和父类相同的属性，子类覆盖父类.
+'''
 class People:
     eyes = 2  # 类属性
     nose = 1  # 类属性
-
     def __init__(self, name, sex):  # 构造方法/初始化方法
         self.name = name  # self.name 是实例属性，把形参name 的值，赋值给实例属性self.name.
         self.sex = sex
-
     def play_game(self):  # 实例方法 p1
         # 打印P1对象，返回这个对象在内存空间的地址
         print(self)  #
-
     @classmethod  # 类方法必须使用@classmethod 修饰器
     def eat(cls):
         print('人类都会吃饭')
-
     # @staticmethod
     # def run(sel):
-
-
 p1 = People('张三', '男')
 print(p1)
 p1.eat()
-
 p2 = People('李四', '男')
 print(p2)
 p2.eat()
+
+
+import socket
+import struct
+
+

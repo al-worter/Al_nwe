@@ -15,7 +15,7 @@
 try:  # 意为 可以把所有出错的代码,写到try里面,如果程序报错了，就去执行except里面的代码
     print('后续的代码')
     print(12)  # 如果try里面没有报错代码会被执行
-    print(aa)  # 如果代码报错,则直接调用except
+    print('aa')  # 如果代码报错,则直接调用except
 except Exception as e:
     # 只有try里面的代码报错，才会执行except，如果没有报错，直接跳过except里面的代码
     # Exception 时所有错误类型的父类,包含了所有错误的错误类型,as e 代表把代码报错原因保存在了这个e 里面

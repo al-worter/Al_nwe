@@ -4,6 +4,7 @@
 # @Site     : http://www.cdtest.cn/
 # @File     : 数据链接.py
 # @Software : PyCharm
+''''''
 '''
 # 连接数据库的步骤
 #     1)：如果是第一次使用，需要下载安装第三方库pymysql
@@ -40,6 +41,7 @@ def conect_db(sql):
     # 使用游标读取查询结果
     # print(link.fetchall())  # 读取所有结果。       查询 操作
     # print('----------------------------------------------')
+    # result = self.cur.fetchall()  # 显示所有结果
     # link.scroll(0, 'absolute')
     # print(link.fetchone())  # 读取一行内容  . 由于 它读取到游标指针是到最后一行，已经无法读取需要加上.scroll
     # print(link.fetchmany(1))  # 指定读取多行内容。
